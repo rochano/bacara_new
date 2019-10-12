@@ -19,7 +19,7 @@ CREATE TABLE `user_info` (
   `last_login_date` datetime DEFAULT NULL,
 
   PRIMARY KEY (`user_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE `user_credit` (
 
@@ -30,7 +30,7 @@ CREATE TABLE `user_credit` (
   `update_date` datetime DEFAULT NULL,
 
   PRIMARY KEY (`user_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE `admin_info` (
 
@@ -39,4 +39,4 @@ CREATE TABLE `admin_info` (
   `password` varchar(20) DEFAULT NULL,
 
   PRIMARY KEY (`user_name`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
