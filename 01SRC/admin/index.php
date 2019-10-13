@@ -10,16 +10,16 @@
     <title>Back Office!</title>
 
     <!-- Bootstrap -->
-    <link href="/admin/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/bacara/admin/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
-    <link href="/admin/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/bacara/admin/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <!-- NProgress -->
-    <link href="/admin/vendors/nprogress/nprogress.css" rel="stylesheet">
+    <link href="/bacara/admin/vendors/nprogress/nprogress.css" rel="stylesheet">
     <!-- Animate.css -->
-    <link href="/admin/vendors/animate.css/animate.min.css" rel="stylesheet">
+    <link href="/bacara/admin/vendors/animate.css/animate.min.css" rel="stylesheet">
 
     <!-- Custom Theme Style -->
-    <link href="/admin/build/css/custom.min.css" rel="stylesheet">
+    <link href="/bacara/admin/build/css/custom.min.css" rel="stylesheet">
   </head>
 
   <body class="login">
@@ -50,21 +50,21 @@
     </div>
 
     <!-- jQuery -->
-    <script src="/admin/vendors/jquery/dist/jquery.min.js"></script>
+    <script src="/bacara/admin/vendors/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap -->
-    <script src="/admin/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/bacara/admin/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- Parsley -->
-    <script src="/admin/vendors/parsleyjs/dist/parsley.min.js"></script>
+    <script src="/bacara/admin/vendors/parsleyjs/dist/parsley.min.js"></script>
     <!-- Custom Theme Scripts -->
-    <script src="/admin/build/js/main.js"></script>
+    <script src="/bacara/admin/build/js/main.js"></script>
 
     <script type="text/javascript">
       function submit() {
-        $.post("/admin/portal.php?loginAdmin",
+        $.post("/bacara/admin/portal.php?loginAdmin",
         $("#form1").serialize(),
         function(data){
             if(data==1){
-                window.location = "/admin/tables_users.php";
+                window.location = "/bacara/admin/tables_users.php";
             } else {
               alert("Username หรือ Password ไม่ถูกต้อง");
               var username = document.getElementById('username');

@@ -6,23 +6,23 @@
   font-family: 'Myriad Pro Regular';
   font-style: normal;
   font-weight: normal;
-  src: local('Myriad Pro Regular'), url('/assets/fonts/MYRIADPRO-REGULAR.woff') format('woff');
+  src: local('Myriad Pro Regular'), url('http://baccaratlunggu.com/bacara/assets/fonts/MYRIADPRO-REGULAR.woff') format('woff');
 }
 @font-face {
   font-family: 'PrintAble4U Bold';
   font-style: normal;
   font-weight: normal;
-  src: local('PrintAble4U Bold'), url('/assets/fonts/PrintAble4UBold.ttf') format('truetype');
+  src: local('PrintAble4U Bold'), url('http://baccaratlunggu.com/bacara/assets/fonts/PrintAble4UBold.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Myriad Hebrew';
   font-style: normal;
   font-weight: normal;
-  src: local('Myriad Hebrew'), url('/assets/fonts/Myriad Hebrew.woff') format('woff');
+  src: local('Myriad Hebrew'), url('http://baccaratlunggu.com/bacara/assets/fonts/Myriad Hebrew.woff') format('woff');
 }
 body {
-  min-width: 1024px;
-  background: url("/assets/images/bg-livecasino.png") #000000;
+  /*min-width: 1024px;*/
+  background: url("http://baccaratlunggu.com/bacara/assets/images/bg-livecasino.png") #000000;
   background-repeat: no-repeat;
   background-position: top center;
   margin: 0px;
@@ -31,7 +31,7 @@ body {
 
 .bg_main {
   min-width: 1024px;
-  background: url("/assets/images/bg_main.png") #171516;
+  background: url("http://baccaratlunggu.com/bacara/assets/images/bg_main.png") #171516;
   background-repeat: no-repeat;
   background-position: top center;
   margin: 0px;
@@ -75,7 +75,7 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
-  background: url(/assets/images/table_blank.png);
+  background: url(http://baccaratlunggu.com/bacara/assets/images/table_blank.png);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: contain;
@@ -95,7 +95,7 @@ body {
 #panel_table .btn_back {
   width: 152px;
   height: 58px;
-  background: url(/assets/images/btn_back.png);
+  background: url(http://baccaratlunggu.com/bacara/assets/images/btn_back.png);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: contain;
@@ -106,7 +106,7 @@ body {
 #panel_table .btn_clear {
   width: 152px;
   height: 58px;
-  background: url(/assets/images/btn_clear.png);
+  background: url(http://baccaratlunggu.com/bacara/assets/images/btn_clear.png);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: contain;
@@ -145,7 +145,7 @@ body {
 #panel_table .panel_table_in table tr td #table_chips_player{
   width: 25px;
   height: 25px;
-  background-image: url(/assets/images/table_chips_player.png);
+  background-image: url(http://baccaratlunggu.com/bacara/assets/images/table_chips_player.png);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: contain;
@@ -155,7 +155,7 @@ body {
 #panel_table .panel_table_in table tr td #table_chips_tie{
   width: 25px;
   height: 25px;
-  background-image: url(/assets/images/table_chips_tie.png);
+  background-image: url(http://baccaratlunggu.com/bacara/assets/images/table_chips_tie.png);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: contain;
@@ -165,7 +165,7 @@ body {
 #panel_table .panel_table_in table tr td #table_chips_banker{
   width: 25px;
   height: 25px;
-  background-image: url(/assets/images/table_chips_banker.png);
+  background-image: url(http://baccaratlunggu.com/bacara/assets/images/table_chips_banker.png);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: contain;
@@ -173,7 +173,7 @@ body {
 }
 
 #panel_table .panel_control {
-  width: 485px;
+  display: table;
   overflow: hidden;
   margin: 5px auto 5px auto;
 }
@@ -181,11 +181,11 @@ body {
 #panel_table .btn_player {
   width: 152px;
   height: 58px;
-  background: url(/assets/images/btn_player.png);
+  background: url(http://baccaratlunggu.com/bacara/assets/images/btn_player.png);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: contain;
-  margin: 0 0 0 13px;
+  margin: 0 2px 0 2px;
   float: left;
   cursor: pointer;
 }
@@ -197,11 +197,11 @@ body {
 #panel_table .btn_tie {
   width: 152px;
   height: 58px;
-  background: url(/assets/images/btn_tie.png);
+  background: url(http://baccaratlunggu.com/bacara/assets/images/btn_tie.png);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: contain;
-  margin: 0 0 0 2px;
+  margin: 0 2px 0 2px;
   float: left;
   cursor: pointer;
 }
@@ -213,11 +213,11 @@ body {
 #panel_table .btn_banker {
   width: 152px;
   height: 58px;
-  background: url(/assets/images/btn_banker.png);
+  background: url(http://baccaratlunggu.com/bacara/assets/images/btn_banker.png);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: contain;
-  margin: 0 0 0 2px;
+  margin: 0 2px 0 2px;
   float: left;
   cursor: pointer;
 }
@@ -622,4 +622,44 @@ select:-webkit-autofill:focus {
   height: 50px !important;
   -webkit-transform: translate(-25px, -25px) scale(1) translate(25px, 25px);
   transform: translate(-25px, -25px) scale(1) translate(25px, 25px);
+}
+
+@media screen  and (max-width: 979px) {
+.container {
+  width: 100%;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+#panel_login,
+#panel_logined,
+#panel_register,
+.resultChipPanel,
+#panel_table {
+  width: 95%;
+}
+
+#panel_login .input,
+#panel_logined .input,
+#panel_register .label,
+#panel_register .input {
+  width: 285px;
+}
+
+#panel_login .button,
+#panel_logined .button,
+#panel_register .button {
+  width: 120px;
+}
+
+#panel_table .btn_player,
+#panel_table .btn_tie,
+#panel_table .btn_banker,
+#panel_table .btn_back,
+#panel_table .btn_clear {
+  width: 95px;
+  height: 37px;
+}
 }

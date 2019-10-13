@@ -4,7 +4,7 @@
 	$_SESSION['bacara_logined_admin'] = null;
 	unset($_SESSION['bacara_logined_admin']);
 
-	header("Location: /admin");
+	header("Location: /bacara/admin");
 
 	session_destroy();
 ?>

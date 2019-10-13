@@ -3,16 +3,14 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>สูตรเฮียบอล</title>
-    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="/assets/css/style_main.css">
+    <link rel="stylesheet" type="text/css" href="<?=$_SERVER['REQUEST_URI']?>/assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="<?=$_SERVER['REQUEST_URI']?>/assets/css/style_main.css">
 </head>
 <body>
     <div class="container">
         <div class="wrapper" style="height: 500px">
-            <div class="panel_promotion">
-                <p>Promotion</p>
-            </div>
 
             <?php
             if(isset($_SESSION['bacara_logined_user'])) { 
@@ -125,8 +123,8 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script defer src="/assets/js/ui_script.js"></script>
-    <script defer src="/assets/js/control.js"></script>
+    <script defer src="<?=$_SERVER['REQUEST_URI']?>/assets/js/ui_script.js"></script>
+    <script defer src="<?=$_SERVER['REQUEST_URI']?>/assets/js/control.js"></script>
     <script>
         function onSubmit() {
             var username = document.getElementById('username');
@@ -145,7 +143,7 @@
             function(data){
                 console.log(data);
                 if(data==1){
-                    window.location = "/";
+                    window.location = "<?=$_SERVER['REQUEST_URI']?>";
                 } else {
                     alert("Username หรือ Password ไม่ถูกต้อง");
                     username.value = "";

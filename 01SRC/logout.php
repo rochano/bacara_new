@@ -7,7 +7,7 @@
 	$_SESSION['bacara_user_dredit'] = null;
 	unset($_SESSION['bacara_user_dredit']);
 
-	header("Location: /");
+	header("Location: /bacara");
 
 	session_destroy();
 ?>

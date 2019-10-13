@@ -40,14 +40,23 @@
                       <?php
                         include_once('../db_connect.php');
 
-                        $sqlSelect = "SELECT i.*, credit FROM user_info i ";
+                        $sqlSelect = "SELECT i.user_id, i.user_name, ";
+                        $sqlSelect .= "i.full_name, i.mobile_phone, ";
+                        $sqlSelect .= "i.email, i.line_id, credit ";
+                        $sqlSelect .= "FROM user_info i ";
                         $sqlSelect .= "LEFT JOIN user_credit c ";
                         $sqlSelect .= "ON i.user_id = c.user_id ";
                         $stmt = $conn->prepare($sqlSelect);
                         $stmt->execute();
-                        $result = $stmt->get_result();
-                        if ($result->num_rows > 0) {
-                            while($row = $result->fetch_assoc()) {?>
+                        $stmt->store_result();
+                        $stmt->bind_result($row['user_id'], 
+                                            $row['user_name'], 
+                                            $row['full_name'],
+                                            $row['mobile_phone'],
+                                            $row['email'],
+                                            $row['line_id'],
+                                            $row['credit']);
+                        while($stmt->fetch()) {?>
                         <tr>
                           <td>
                             <a href="javascript:updateCredit('<?=$row['user_id']?>')" class="btn btn-info btn-xs"><i class="fa fa-pencil"></i> Update </a>
@@ -60,8 +69,7 @@
                           <td><?=$row['line_id']?></td>
                           <td><input name="credit" id="credit_<?=$row['user_id']?>" type="text" value="<?=$row['credit']?>" class="form-control" /></td>
                         </tr>
-                            <?php }
-                        }
+                        <?php }
                       ?>
                       </tbody>
                     </table>

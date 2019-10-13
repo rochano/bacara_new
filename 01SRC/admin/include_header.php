@@ -2,7 +2,7 @@
   session_start();
 
   if(!isset($_SESSION['bacara_logined_admin'])) {
-    header("Location: /admin/index.php");
+    header("Location: /bacara/admin/index.php");
   }
 ?>
 <!DOCTYPE html>
@@ -17,16 +17,16 @@
     <title>Back Office</title>
 
     <!-- Bootstrap -->
-    <link href="/admin/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/bacara/admin/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
-    <link href="/admin/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/bacara/admin/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <!-- NProgress -->
-    <link href="/admin/vendors/nprogress/nprogress.css" rel="stylesheet">
+    <link href="/bacara/admin/vendors/nprogress/nprogress.css" rel="stylesheet">
     <!-- Datatables -->
-    <link href="/admin/vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
+    <link href="/bacara/admin/vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom Theme Style -->
-    <link href="/admin/build/css/custom.min.css" rel="stylesheet">
+    <link href="/bacara/admin/build/css/custom.min.css" rel="stylesheet">
   </head>
 
   <body class="nav-md">
@@ -58,12 +58,12 @@
                 <ul class="nav side-menu">
                   <li><a><i class="fa fa-table"></i> Tables <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="/admin/tables_users.php">Users</a></li>
+                      <li><a href="/bacara/admin/tables_users.php">Users</a></li>
                     </ul>
                   </li>
                   <li><a><i class="fa fa-edit"></i> Setting <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="/admin/change_password.php">Change Password</a></li>
+                      <li><a href="/bacara/admin/change_password.php">Change Password</a></li>
                     </ul>
                   </li>
                 </ul>
@@ -88,7 +88,7 @@
                     <span class=" fa fa-angle-down"></span>
                   </a>
                   <ul class="dropdown-menu dropdown-usermenu pull-right">
-                    <li><a href="/admin/logout.php"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                    <li><a href="/bacara/admin/logout.php"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
                   </ul>
                 </li>
               </ul>

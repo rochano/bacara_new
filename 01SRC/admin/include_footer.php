@@ -6,18 +6,18 @@
     </div>
 
     <!-- jQuery -->
-    <script src="/admin/vendors/jquery/dist/jquery.min.js"></script>
+    <script src="/bacara/admin/vendors/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap -->
-    <script src="/admin/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/bacara/admin/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- NProgress -->
-    <script src="/admin/vendors/nprogress/nprogress.js"></script>
+    <script src="/bacara/admin/vendors/nprogress/nprogress.js"></script>
     <!-- Datatables -->
-    <script src="/admin/vendors/datatables.net/js/jquery.dataTables.min.js"></script>
-    <script src="/admin/vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+    <script src="/bacara/admin/vendors/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="/bacara/admin/vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
     <!-- Parsley -->
-    <script src="/admin/vendors/parsleyjs/dist/parsley.min.js"></script>
+    <script src="/bacara/admin/vendors/parsleyjs/dist/parsley.min.js"></script>
     <!-- Custom Theme Scripts -->
-    <script src="/admin/build/js/main.js"></script>
+    <script src="/bacara/admin/build/js/main.js"></script>
 
     <script type="text/javascript">
       function updateCredit(userId) {
@@ -25,7 +25,7 @@
             userId: userId,
             credit: $("#credit_"+userId).val()
         }
-        $.post("/admin/portal.php?updateCredit",
+        $.post("/bacara/admin/portal.php?updateCredit",
             data
         ,
         function(data){
@@ -38,7 +38,7 @@
       }
 
       function submit() {
-        $.post("/admin/portal.php?changePassword",
+        $.post("/bacara/admin/portal.php?changePassword",
         $("#form1").serialize(),
         function(data){
             if(data==1){
