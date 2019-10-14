@@ -15,8 +15,6 @@ $(_0x7504[25])[_0x7504[16]](function(){$(_0x7504[5])[_0x7504[4]](0);count= 1;$(_
 
 function clickPlayer() {
 	var timeOut = 0;
-	$(".resultChipPanel").css("background", "#0017f2");
-	$(".resultChipPanel span").text("PLAYER");
 	setTimeout(function() {
 	clickChoose= 0;lastCk= _0x7504[3];$(_0x7504[5])[_0x7504[4]](count++);$(_0x7504[7])[_0x7504[6]]();choose[_0x7504[9]](_0x7504[8]);if(!Calculate()){return false;};/*if(choose[choose[_0x7504[10]]- 1]== choose[choose[_0x7504[10]]- 2]|| choose[choose[_0x7504[10]]- 2]== _0x7504[0]){*/row++;if(row> 8){row= 1;col++;$(_0x7504[13]+ col)[_0x7504[12]](_0x7504[11]);over++;lastId= _0x7504[13]+ col;postiion[_0x7504[9]](lastId)}else {$(_0x7504[14]+ row+ _0x7504[15]+ col)[_0x7504[12]](_0x7504[11]);lastId= _0x7504[14]+ row+ _0x7504[15]+ col;postiion[_0x7504[9]](lastId)}/*}else {row= 1;col++;$(_0x7504[14]+ row+ _0x7504[15]+ col)[_0x7504[12]](_0x7504[11]);over= 0;lastId= _0x7504[14]+ row+ _0x7504[15]+ col;postiion[_0x7504[9]](lastId)};*/if(col> 31){col= 1;for(i= 1;i<= 31;i++){$(_0x7504[14]+ row+ _0x7504[15]+ i)[_0x7504[12]](_0x7504[0])};lastId= _0x7504[0];postiion= []}
 	}, timeOut);
@@ -24,8 +22,6 @@ function clickPlayer() {
 
 function clickBanker() {
 	var timeOut = 0;
-	$(".resultChipPanel").css("background", "#ff0000");
-	$(".resultChipPanel span").text("BANKER");
 	setTimeout(function() {
 	clickChoose= 1;lastCk= _0x7504[18];$(_0x7504[5])[_0x7504[4]](count++);$(_0x7504[7])[_0x7504[6]]();choose[_0x7504[9]](_0x7504[19]);if(!Calculate()){return false;};/*if(choose[choose[_0x7504[10]]- 1]== choose[choose[_0x7504[10]]- 2]|| choose[choose[_0x7504[10]]- 2]== _0x7504[0]){*/row++;if(row> 8){row= 1;col++;$(_0x7504[13]+ col)[_0x7504[12]](_0x7504[20]);over++;lastId= _0x7504[13]+ col;postiion[_0x7504[9]](lastId)}else {$(_0x7504[14]+ row+ _0x7504[15]+ col)[_0x7504[12]](_0x7504[20]);lastId= _0x7504[14]+ row+ _0x7504[15]+ col;postiion[_0x7504[9]](lastId)}/*}else {row= 1;col++;$(_0x7504[14]+ row+ _0x7504[15]+ col)[_0x7504[12]](_0x7504[20]);over= 0;lastId= _0x7504[14]+ row+ _0x7504[15]+ col;postiion[_0x7504[9]](lastId)}*/;if(col> 31){col= 1;lastId= _0x7504[0];for(i= 1;i<= 31;i++){$(_0x7504[14]+ row+ _0x7504[15]+ i)[_0x7504[12]](_0x7504[0])};postiion= []}
 	}, 500);
@@ -33,8 +29,6 @@ function clickBanker() {
 
 function clickTie() {
 	var timeOut = 0;
-	$(".resultChipPanel").css("background", "#067039");
-	$(".resultChipPanel span").text("TIE");
 	setTimeout(function() {
 	clickChoose= 2;lastCk= _0x7504[49];$(_0x7504[5])[_0x7504[4]](count++);$(_0x7504[7])[_0x7504[6]]();choose[_0x7504[9]](_0x7504[50]);if(!Calculate()){return false;};/*if(choose[choose[_0x7504[10]]- 1]== choose[choose[_0x7504[10]]- 2] || choose[choose[_0x7504[10]]- 2]== _0x7504[0]){*//*col= 1;*/row++;if(row> 8){row= 1;col++;$(_0x7504[13]+ col)[_0x7504[12]](_0x7504[22]);over++;lastId= _0x7504[13]+ col;postiion[_0x7504[9]](lastId)/*col++;$(_0x7504[23]+ col)[_0x7504[12]](_0x7504[22]);over++;lastId= _0x7504[23]+ col;postiion[_0x7504[9]](lastId)*/}else {$(_0x7504[14]+ row+ _0x7504[15]+ col)[_0x7504[12]](_0x7504[22]);lastId= _0x7504[14]+ row+ _0x7504[15]+ col;postiion[_0x7504[9]](lastId)}/*}else {/*row++;row= 1;col++;$(_0x7504[14]+ row+ _0x7504[15]+ col)[_0x7504[12]](_0x7504[22]);lastId= _0x7504[14]+ row+ _0x7504[15]+ col;postiion[_0x7504[9]](lastId)}*/;if(col> 31){col= 1;lastId= _0x7504[0];for(i= 1;i<= 31;i++){$(_0x7504[14]+ row+ _0x7504[15]+ i)[_0x7504[12]](_0x7504[0])};postiion= []}
 	}, timeOut);

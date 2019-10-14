@@ -59,6 +59,9 @@ body {
   border-radius: 5px;
   display: flex;
   padding: 15px 0;
+  background: url(/bacara/assets/images/bg_chip_panel_init.png);
+  background-repeat: no-repeat;
+  background-position: top center;
 }
 
 .resultChipPanel span {
@@ -67,6 +70,7 @@ body {
   font-size: 30px;
   font-family: 'PrintAble4U Bold';
   color: #ffffff;
+  height: 30px;
 }
 
 #panel_table_blank {

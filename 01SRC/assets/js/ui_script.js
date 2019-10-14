@@ -128,23 +128,21 @@ function alertClear() {
 }
 
 function randomNumber(result) {
-  var resultPlayer = document.getElementById("result_player");
-  var resultBanker = document.getElementById("result_banker");
   var result = Math.floor(Math.random()* 100);
-  var resultPlayerValue = result + ".00 %";
-  var resultBankerValue = (100-result) + ".00 %";
-
   console.log(result);
 
-  // not allowed 40% - 60%
-  if (result > 40 && result < 60) {
-    result =  randomNumber();
-  // not allowed duplicated value
-  } else if (resultPlayer.innerText == resultPlayerValue) {
-    result =  randomNumber();
-  } else {
-    resultPlayer.innerText = result + ".00 %"
-    resultBanker.innerText = (100-result) + ".00 %"
+  // 45% - 55%
+  if (result > 45 && result < 55) {
+    $(".resultChipPanel").css("background", "url(/bacara/assets/images/bg_chip_panel_tie.png)");
+    $(".resultChipPanel span").text("TIE");
+  // <= 45%
+  } else if (result <= 45){
+    $(".resultChipPanel").css("background", "url(/bacara/assets/images/bg_chip_panel_banker.png)");
+    $(".resultChipPanel span").text("BANKER");
+  // >= 55%
+  } else if (result >= 55){
+    $(".resultChipPanel").css("background", "url(/bacara/assets/images/bg_chip_panel_player.png)");
+    $(".resultChipPanel span").text("PLAYER");
   }
   return result;
 }

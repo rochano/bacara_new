@@ -16,11 +16,11 @@
             if(isset($_SESSION['bacara_logined_user'])) { 
                 $loginedUser = $_SESSION['bacara_logined_user'];
                 $userId = $loginedUser['user_id'];
-                $fullName = $loginedUser['full_name'];
+                $userName = $loginedUser['user_name'];
             ?>
                 <div id="panel_logined">
                     <div class="input">
-                        <span><?=$fullName?></span>
+                        <span><?=$userName?></span>
                     </div>
                     <div class="input">
                         <span class="credit_num">
@@ -73,7 +73,7 @@
                     <div id="main_body_col1_banker"></div>
                     <div id="result_player"></div>
                     <div id="result_banker"></div>
-                    <span>&nbsp;</span>
+                    <span><font color="#000000" style="line-height: 1px;">รอผลลัพธ์สูตร</font></span>
                 </div>
 
                 <div id="panel_table">

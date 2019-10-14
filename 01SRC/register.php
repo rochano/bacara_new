@@ -54,7 +54,7 @@
                             <input name="submit" id="submit" type="submit" value="สมัครสมาชิก" />
                         </div>
                         <div class="button reset">
-                            <input name="reset" id="reset" type="reset" value="ยกเลิก" />
+                            <input name="reset" id="reset" type="button" value="ยกเลิก" onclick="window.location='/bacara'" />
                         </div>
                     </div>
         		</form>

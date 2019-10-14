@@ -3,7 +3,7 @@
  	date_default_timezone_set("Asia/Bangkok");
 
 	$userId = "";
-	$fullName = "";
+	$registerUsername = "";
 	$credit = 0;
 
 	// login
@@ -13,15 +13,15 @@
 
 		include_once('db_connect.php');
 
-		$sqlSelect = "SELECT user_id, full_name FROM user_info WHERE user_name = ? AND password = ? ";
+		$sqlSelect = "SELECT user_id, user_name FROM user_info WHERE user_name = ? AND password = ? ";
 		$stmt = $conn->prepare($sqlSelect);
 		$stmt->bind_param("ss", $loginUserName, $loginPassword);
 		$stmt->execute();
 		$stmt->store_result();
-		$stmt->bind_result($row["user_id"], $row["full_name"]);
+		$stmt->bind_result($row["user_id"], $row["user_name"]);
 	    if($stmt->fetch()) {
 			$userId = $row["user_id"];
-			$fullName = $row["full_name"];
+			$registerUsername = $row["user_name"];
 
 	        $sqlUpdate = "UPDATE user_info SET last_login_date = ? WHERE user_id = ?";
 	        $stmt2 = $conn->prepare($sqlUpdate);
@@ -46,7 +46,7 @@
 
 			$_SESSION['bacara_logined_user'] = array(
 				'user_id' => $userId,
-				'full_name' => $fullName
+				'user_name' => $registerUsername
 			);
 
 			$_SESSION['bacara_user_credit'] = array(
@@ -119,7 +119,7 @@
 
 		$_SESSION['bacara_logined_user'] = array(
 			'user_id' => $userId,
-			'full_name' => $fullName
+			'user_name' => $registerUsername
 		);
 
 	// getCredit
