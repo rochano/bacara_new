@@ -7,6 +7,52 @@
     <title>สูตรเฮียบอล</title>
     <link rel="stylesheet" type="text/css" href="<?=$_SERVER['REQUEST_URI']?>/assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="<?=$_SERVER['REQUEST_URI']?>/assets/css/style_main.css">
+    <style type="text/css">
+        #panel_note1,
+        #panel_note2,
+        #panel_note3 {
+          margin: 5px auto 0 auto;
+          width: 470px;
+          position: relative;
+        }
+
+        #panel_note1 {
+          margin: 10px auto 0 auto;
+        }
+
+        #panel_note1 img, 
+        #panel_note2 img, 
+        #panel_note3 img{
+          margin: 0;
+          padding: 0;
+          width: 100%;
+          height: auto;
+        }
+
+        #panel_login .input input::placeholder,
+        #panel_logined .input input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+          color: #7e7875;
+          opacity: 1; /* Firefox */
+        }
+
+        #panel_login .input input:::-ms-input-placeholder,
+        #panel_logined .input input:::-ms-input-placeholder { /* Internet Explorer 10-11 */
+          color: #7e7875;
+        }
+
+        #panel_login .input input::::-ms-input-placeholder,
+        #panel_logined .input input::::-ms-input-placeholder { /* Microsoft Edge */
+          color: #7e7875;
+        }
+
+        @media screen  and (max-width: 979px) {
+        #panel_note1,
+        #panel_note2,
+        #panel_note3 {
+          width: 96%;
+        }
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -63,6 +109,15 @@
                             </div>
                         </div>
                     </form>
+                </div>
+                <div id="panel_note1">
+                    <img src="/bacara/assets/images/bg-note1.png" width="100%" height="auto" />
+                </div>
+                <div id="panel_note2">
+                    <img src="/bacara/assets/images/bg-note2.png" width="100%" height="auto" />
+                </div>
+                <div id="panel_note3">
+                    <img src="/bacara/assets/images/bg-note3.png" width="100%" height="auto" />
                 </div>
             <?php } ?>
 
