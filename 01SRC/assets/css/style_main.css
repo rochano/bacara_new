@@ -22,9 +22,11 @@
 }
 body {
   /*min-width: 1024px;*/
-  background: url("http://baccaratlunggu.com/bacara/assets/images/bg-livecasino.png") #000000;
+  background: url("/bacara/assets/images/bg-livecasino.png") #000000;
   background-repeat: no-repeat;
   background-position: top center;
+  background-attachment: fixed;
+  background-size: contain;
   margin: 0px;
   font-family: Myriad Pro Regular;
 }
